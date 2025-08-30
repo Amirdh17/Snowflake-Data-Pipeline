@@ -1,1 +1,1 @@
-# Snowflake-Data-Pipeline
+# Snowflake-AQI-Index-Data-Pipeline
