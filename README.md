@@ -1,3 +1,4 @@
 # Snowflake-AQI-Index-Data-Pipeline
 ### End to End Data Engineering Project
-
+#### Overview
+This project demonstrates a real-time data pipeline that ingests, processes, and visualizes Air Quality Index (AQI) data from data.gov.in using Snowflake as data warehouse. Python script utilizes snowpark to make connection with snowflake and make use of api key to call for the json data from source (data.gov.in) and ingest AQI json raw data into internal stage for further processing. In snowflake, we kept it like four layers Stage, Clean, Consumption, Publish. Raw data transfered to Stage layer, made the raw data flatten and goes to Consumption layer where dimension and fact tables are created. Streamlit is utilized to generate report using dimension and aggregated fact table. Overall, It is a end to end data engineering automated project where json data from source, passed through different layers and showed to the user by streamlit dashboard. Data flows automatically without human intervention but need to run the python script manually. But it can be automated by Github action or Control m job scheduler.  
